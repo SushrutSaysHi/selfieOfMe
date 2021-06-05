@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+
+          <title>My Selfie App</title>
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link href="style.css" rel="stylesheet">
+        <link rel="shortcut icon" href="camera-removebg-preview.png">
+
+     </head>
+     <body>
+
+          <div class="container-fluid" style="background-color: #373b42; color: whitesmoke;">
+               <a id="Link" href="" download="myselfie.png"></a>
+               <h1>Voice Selfie
+                   <span> <img src="images.jpg" style="height: 100; width: 30px;"></span>
+               </h1>
+          </div>
+          <div class="container" style="background-color: #373b42; margin-top: 10px; color: whitesmoke; border-radius: 20px;">
+              <center>
+                    <div class="text-danger" style="size: 30px;"><p>Please allow the website to record audio</p></div>
+                    <h4> Say 'Take my selfie'</h4>
+                    <textarea readonly="true" id="textarea" class="form-control"></textarea>
+                    <hr>
+                    <button class="btn btn-outline-success btn btn-rounded" type="button" style="width: 50px; height: 30px;" onclick="start()">Start</button>
+                    <hr>
+                    <label class="text-info" >Your webcam will be shown here</label>
+                    <div id="cam" class="form-group"></div>
+                    <hr>
+                    <label class="text-info">Your image will be shown here</label>
+                    <div id="img" class="form-group"></div>
+
+              </center>
+          </div>
+          <script src="main.js"></script>
+     </body>
+
+</html>
